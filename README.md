@@ -5,7 +5,7 @@ This repository contains code for running the stablediffusion gradio web ui (inc
 ![Screenshot of the webUI running](sd_webgui_runpod_screenshot.jpg)
 
 ## How do I run it?
-Code is contained in [the linked iPython Notebook](stablediffusion_runpod_adapted_webgui.ipynb) which can be run directly in JupyterLab on RunPod or similar cloud providers. Using the example of RunPod, simply start a Pod with an appropriate GPU, connect to the pod's Jupyterlab URL, upload the ipynb file to jupyterlab, change any variables you'd like to change (highlighted in the code), and run through all the cells. 
+Code is contained in [the linked iPython Notebook](stablediffusion_runpod_adapted_webgui.ipynb) which can be run directly in JupyterLab locally, on the cloud, or on RunPod or similar cloud providers. The notebook comes preconfigured for runpod but can be trivially adapted to any other environment by changing a couple variables.
 
 ### Dependencies
 All of these dependencies should come preinstalled when running on commodity GPU services (such as RunPod, LambdaLabs, Colab, SageMaker) or using pre-built deep learning VMs in cloud providers (such as AWS/GCP/Azure). You'll need to have the following available when the notebook runs:
@@ -13,7 +13,7 @@ All of these dependencies should come preinstalled when running on commodity GPU
 - CUDA
 - conda/miniconda
 
-## RunPod?
+## Why use a public cloud provider?
 I chose [RunPod](https://www.runpod.io) because it's the cheapest way I've found to get GPU time on powerful GPUs, often costing less than 1/3 of other major cloud providers. If running on RunPod, I built this based on the RunPod Pytorch container. That said, this notebook does not make use of the built-in preinstalled pytorch or conda environment as version/dependency incompatibilities between the preinstalled packages and the ones needed by the pipeline make it much easier to start fresh. 
 
 This is also generally cheaper than DALL-E and similar managed services. DALL-E costs $15 for 115 images, and while relatively easy to use is not very customizable. With this notebook and an appropriate GPU, you can generate that many images in a few minutes for less than $1.
