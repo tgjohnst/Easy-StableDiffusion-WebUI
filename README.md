@@ -10,6 +10,8 @@ Code is contained in [the linked iPython Notebook](stablediffusion_runpod_adapte
 ## RunPod?
 I chose [RunPod](https://www.runpod.io) because it's the cheapest way I've found to get GPU time on powerful GPUs, often costing less than 1/3 of other major cloud providers. If running on RunPod, I built this based on the RunPod Pytorch container. That said, this notebook does not make use of the built-in preinstalled pytorch or conda environment as version/dependency incompatibilities between the preinstalled packages and the ones needed by the pipeline make it much easier to start fresh. Thus, it should run on any other cloud service which provides a jupyterlab/jupyterhub interface and has CUDA drivers preinstalled.
 
+This is also generally cheaper than DALL-E and similar managed services. DALL-E costs $15 for 115 images, and while relatively easy to use is not very customizable. With this notebook and an appropriate GPU, you can generate that many images in a few minutes for less than $1.
+
 ## Persistence?
 This notebook is designed to create a persistent conda environment and model files in the `/workspace/` directory, which persists across stopping and starting pods so you don't have to redownload and reinstall everything every time you start a new runtime. It could easily be modified to use any similar persistent storage in other services (e.g. a google drive mount in colab).
 
