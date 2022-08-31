@@ -1,4 +1,4 @@
-# stablediffusion-webui-runpod
+# StableDiffusion AI image generation web-app for RunPod
 ## What is this?
 This repository contains code for running the stablediffusion gradio web ui (including ESRGAN+GFPGAN) on RunPod or similar GPU services. This is an incredibly powerful way to generate and refine images and art using text and image prompts. The notebook linked below can be run end-to-end to get a working WebUI for Stable Diffusion with support for face correction (GFPGAN) and superresolution upscaling (ESRGAN).
 
