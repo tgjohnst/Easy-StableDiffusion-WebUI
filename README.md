@@ -5,7 +5,7 @@ This repository contains code for running the stablediffusion gradio web ui (inc
 ![Screenshot of the webUI running](sd_webgui_runpod_screenshot.jpg)
 
 ## How do I run it?
-Code is contained in [the linked iPython Notebook](stablediffusion_runpod_adapted_webgui.ipynb) which can be run directly in JupyterLab on RunPod or similar cloud providers. Simply upload the ipynb file to jupyterlab, change any variables you'd like to change (highlighted in the code), and run through all the cells. 
+Code is contained in [the linked iPython Notebook](stablediffusion_runpod_adapted_webgui.ipynb) which can be run directly in JupyterLab on RunPod or similar cloud providers. Using the example of RunPod, simply start a Pod with an appropriate GPU, connect to the pod's Jupyterlab URL, upload the ipynb file to jupyterlab, change any variables you'd like to change (highlighted in the code), and run through all the cells. 
 
 ## RunPod?
 I chose [RunPod](https://www.runpod.io) because it's the cheapest way I've found to get GPU time on powerful GPUs, often costing less than 1/3 of other major cloud providers. If running on RunPod, I built this based on the RunPod Pytorch container. That said, this notebook does not make use of the built-in preinstalled pytorch or conda environment as version/dependency incompatibilities between the preinstalled packages and the ones needed by the pipeline make it much easier to start fresh. Thus, it should run on any other cloud service which provides a jupyterlab/jupyterhub interface and has CUDA drivers preinstalled.
