@@ -1,6 +1,6 @@
 # StableDiffusion AI image generation web-app for GPU clouds
 ## What is this?
-[Stable Diffusion] is an incredibly powerful AI model that specializes in art generation - it's an incredibly powerful way to generate and refine images and art using text and image prompts. This repository contains code for running a simple yet powerful Gradio web application that lets you use the power of Stable Diffusion on commodity cloud GPU services without writing any code. The notebook linked below can simply be run from top to bottom, no other accounts or data required, to get a working WebUI for Stable Diffusion with support for face correction (GFPGAN) and superresolution upscaling (ESRGAN).
+[Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) is an incredibly powerful AI model that specializes in art generation - it's an incredibly powerful way to generate and refine images and art using text and image prompts. This repository contains code for running a simple yet powerful Gradio web application that lets you use the power of Stable Diffusion on commodity cloud GPU services without writing any code. The notebook linked below can simply be run from top to bottom, no other accounts or data required, to get a working WebUI for Stable Diffusion with support for face correction (GFPGAN) and superresolution upscaling (ESRGAN).
 
 ![Screenshot of the webUI running](sd_webgui_runpod_screenshot.jpg)
 
